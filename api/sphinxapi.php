@@ -853,9 +853,8 @@ class SphinxClient
 	{
 		assert ( is_string($attribute) );
 		assert ( is_array($values) );
-		assert ( count($values) );
 
-		if ( is_array($values) && count($values) )
+		if ( count($values) )
 		{
 			foreach ( $values as $value )
 				assert ( is_numeric($value) );
